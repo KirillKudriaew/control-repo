@@ -1,3 +1,3 @@
 class role::vsphere-deployer {
-  include profile::vsphere-deployer
+  include profile::vspheredeployer
 }
