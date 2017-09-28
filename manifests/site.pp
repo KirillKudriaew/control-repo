@@ -27,7 +27,7 @@ File { backup => false }
 
 node /(i)?vsphere-deployer.*/ {
   notify { 'Hi deployer':}
-  include role::vsphere-deployer
+  include role::vmdeployer
 }
 
 node default {
