@@ -8,7 +8,7 @@ class profile::vspheredeployer {
   #cpu_reservation             => '0',
   cpus                        => '1',
   #guest_ip                    => '192.168.30.37',
-  hostname                    => 'sample',
+  #hostname                    => 'sample',
   #instance_uuid               => '501870f2-f891-879f-2bb7-f87023789959',
   memory                      => '1024',
   #memory_reservation          => '0',
