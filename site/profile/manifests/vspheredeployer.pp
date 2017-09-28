@@ -2,7 +2,7 @@ class profile::vspheredeployer {
   $vsphereprereq = ['zlib-devel', 'libxslt-devel', 'patch', 'gcc']
   package { $vsphereprereq: }
 
-  vsphere_vm { '/HOME/CL01/Puppet/sample':
+  vsphere_vm { '/CL01/Puppet/sample':
   ensure                      => 'present',
   #resource_pool               => 'general1',
   #cpu_reservation             => '0',
