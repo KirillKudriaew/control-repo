@@ -19,7 +19,7 @@ class profile::vspheredeployer {
   #snapshot_power_off_behavior => 'powerOff',
   template                    => false,
   #tools_installer_mounted     => false,
-  source                      => '/Templates/Centos7-template',
+  source                      => '/HOME/CL01/Templates/Centos7-template',
   source_type                 => 'template',
   #uuid                        => '4218419b-3b98-18ca-e77f-93b567dda463',
 }
