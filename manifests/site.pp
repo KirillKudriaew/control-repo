@@ -26,7 +26,7 @@ File { backup => false }
 # specified in the console for that node.
 
 node /(i)?vsphere-deployer.*/ {
-  notify { "Hi deployer": }
+  #notify { "Hi deployer": }
   include role::vmdeployer
 }
 
