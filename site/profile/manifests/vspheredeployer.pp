@@ -6,6 +6,6 @@ class profile::vspheredeployer {
   ensure                      => 'running',
   cpus                        => '1',
   memory                      => '1024',
-  source                      => '/Templates/Centos7-template',
+  source                      => '/HOME/CL01/Templates/Centos7-template',
 }
 }
