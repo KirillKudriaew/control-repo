@@ -3,7 +3,7 @@ class profile::vspheredeployer {
   package { $vsphereprereq: }
 
   vsphere_vm { '/HOME/CL01/Puppet/sample':
-  ensure                      => 'present',
+  ensure                      => 'running',
   #resource_pool               => 'general1',
   #cpu_reservation             => '0',
   cpus                        => '1',
