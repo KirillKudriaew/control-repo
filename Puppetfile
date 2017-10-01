@@ -7,7 +7,8 @@ forge "http://forge.puppetlabs.com"
 #mod "puppetlabs/concat",      '2.1.0'
 mod 'puppetlabs-windows', '5.0.0'
 mod 'crayfishx-firewalld', '3.4.0'
-mod 'puppetlabs-vsphere', '1.2.2'
+#mod 'puppetlabs-vsphere', '1.2.2'
+mod 'garethr-docker', '5.3.0'
 
 # Modules from Git
 # Examples: https://github.com/puppetlabs/r10k/blob/master/doc/puppetfile.mkd#examples

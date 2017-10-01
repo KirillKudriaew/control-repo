@@ -2,10 +2,14 @@ class profile::vspheredeployer {
   $vsphereprereq = ['zlib-devel', 'libxslt-devel', 'patch', 'gcc']
   package { $vsphereprereq: }
 
-  vsphere_vm { '/HOME/CL01/Puppet/sample':
-  ensure                      => 'running',
-  cpus                        => '1',
-  memory                      => '1024',
-  source                      => '/HOME/CL01/Templates/Centos7-template',
+  docker::run { 'helloworld-nginx':
+  image                     => 'nginx',
+  ports                     => ['80'],
+  expose                    => ['80'],
+  remove_container_on_start => true,
+  remove_volume_on_start    => false,
+  remove_container_on_stop  => true,
+  remove_volume_on_stop     => false,
 }
+
 }
