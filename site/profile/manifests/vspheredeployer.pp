@@ -2,12 +2,6 @@ class profile::vspheredeployer {
   $vsphereprereq = ['zlib-devel', 'libxslt-devel', 'patch', 'gcc']
   package { $vsphereprereq: }
 
-include 'docker'
-
-  class { 'docker':
-    version => 'latest',
-  }
-
   docker::run { 'helloworld-nginx':
   image                     => 'nginx',
   ports                     => ['80'],
