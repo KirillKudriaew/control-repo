@@ -6,7 +6,7 @@ class profile::vspheredeployer {
 
   docker::run { 'helloworld-nginx':
   image                     => 'nginx',
-  ports                     => ['80'],
+  ports                     => ['8080'],
   expose                    => ['80'],
   remove_container_on_start => true,
   remove_volume_on_start    => false,
